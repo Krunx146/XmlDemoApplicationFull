@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="input-container">
+    <input type="text" id="borrowName" placeholder="Ovdje unesite username kako bi mogli posuditi knjigu" />
+</div>
+
+<div id="dataContainer">
+
+</div>
+
+<script>
+    var Urls = {
+        GetData: "@Url.Action("GetBookData", "Home")",
+        BorrowBook: "@Url.Action("BorrowBook", "Home")",
+        ReturnBook: "@Url.Action("ReturnBook", "Home")"
+    }
+</script>
